@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema({
         trim:true,
       
       } ,  
-    fullname:{
+    fullName:{
         type: String,
         required: true,
        
@@ -69,7 +69,7 @@ const userSchema = new mongoose.Schema({
                 _id:this._id,
                 email:this.email,
                 userName:this.userName,
-                fullname:this.fullname
+                fullName:this.fullName
 
             },
             process.env.ACCESS_TOKEN_SECRET,
@@ -84,7 +84,7 @@ const userSchema = new mongoose.Schema({
                 _id:this._id,
                 email:this.email,
                 userName:this.userName,
-                fullname:this.fullname
+                fullName:this.fullName
 
             },
             process.env.REFRESH_TOKEN_SECRET,
